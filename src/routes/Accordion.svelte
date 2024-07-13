@@ -1,5 +1,5 @@
 <script>
-  import IcTwotoneArrowDropDownCircle from '~icons/ic/twotone-arrow-drop-down-circle';
+  import GravityUiArrowChevronDown from '~icons/gravity-ui/arrow-chevron-down';
 
   export let open = false;
 	import { slide } from 'svelte/transition';
@@ -14,7 +14,7 @@
 		</div>
 		
 		<button >
-      <IcTwotoneArrowDropDownCircle />
+      <GravityUiArrowChevronDown />
 		</button>
 	</div>
 	
@@ -34,41 +34,51 @@
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 10px;
+    margin-right: 15px;
 	}
 	
 	div.header {
     display:flex;
-		width:100%;
+		/* width:100%; */
     align-items: center;
-    padding-bottom: 20px;
-    padding-left: 10px;
+    padding: 20px;
+    background-color: var(--clr-border-edge-alpha);
+    backdrop-filter: blur(200px);
+    box-shadow: 0px 5px 15px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
     border-radius: 4px;
     cursor: pointer;
-    color: var(--clr-secondary-text);
+    color: var(--clr-black);
+    transition: color 0.15s, box-shadow 0.15s, border 0.15s;
 	}
+
+  div.header:hover {
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-border-edge);
+  box-shadow: 0px 5px 5px var(--clr-shadow);
+  }
   
   div.header:hover button {
-    border: 1px solid var(--clr-secondary);
-    background-color: var(--clr-secondary-alpha-2);
+    background-color: var(--clr-primary-alpha-2);
   }
   
 	div.header .text {
-    color: var(--clr-secondary-text);
     flex: 1;
 		margin-right: 5px;
-    font-family: 'Poppins';
+    font-family: 'Oswald';
     font-weight: bold;
-    transition: filter 0.3s ease-in-out;
 	}
 	
 	div.details {
-    /* width:90%; */
-    color: var(--clr-secondary-text);
-    background-color: var(--clr-secondary-alpha-3);
+    margin-top: 20px;
+    color: var(--clr-black);
+    background-color: var(--clr-border-edge-alpha);
+    backdrop-filter: blur(200px);
+    box-shadow: 0px 5px 15px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
 		padding:1rem;
     border-radius: 4px;
-    font-family: 'Lora';
-    border: 1px solid var(--clr-secondary-alpha-2);
+    font-family: 'Source Serif 4';
     
 	}
   
@@ -84,11 +94,6 @@
     transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
-  button:hover {
-    border: 2px solid var(--clr-secondary);
-    background-color: var(--clr-secondary-alpha-2);
-  }
-
   @media all and (max-width: 1440px) {
     div.header,
     div.header .text,
@@ -100,6 +105,13 @@
   @media all and (max-width: 768px) {
     div.accordion {
       padding-left: 0px;
+    }
+  }
+
+  @media all and (max-width: 425px) {
+    div.accordion {
+      margin-right: 0px;
+      margin: 0;
     }
   }
 </style>
