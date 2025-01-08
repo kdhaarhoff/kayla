@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM Serif Text:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 :root {
-  --clr-primary: #722f37;
-  --clr-primary-alpha: #722f3777;
-  --clr-primary-alpha-2: #722f373f;
-  --clr-primary-text: #411a1e;
-  --clr-primary-text-alpha: #722f3717;
+  --clr-primary: #204e4a;
+  --clr-primary-alpha: #204e4a77;
+  --clr-primary-alpha-2: #204e4a3f;
+  --clr-primary-text: #4e2024;
+  --clr-primary-text-alpha: #2f723a17;
+  --clr-primary-text-alpha-2: #4e2024ac;
   --clr-bg: #f2f2f2;
   --clr-bg-alpha-0: #f2f2f200;
   --clr-bg-alpha-50: #f2f2f2ad;
-  --clr-border: #e4e1e1;
-  --clr-shadow: #cecece;
+  --clr-border: #204e4a10;
+  --clr-shadow: #2f723a17;
+  /* --clr-shadow: #cecece; */
   --clr-border-edge: #ffffff;
   --clr-border-edge-alpha: #ffffff6c;
   --clr-black: #3a3a3a;
@@ -95,7 +98,7 @@ h1,
 h2,
 h3,
 p {
-  font-family: 'Oswald';
+  font-family: "DM Serif Text";
 }
 
 .content-wrapper {
@@ -129,7 +132,7 @@ nav {
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s background 0.5;
-  font-family: 'Oswald';
+  font-family: "DM Serif Text";
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
@@ -201,7 +204,7 @@ nav a:hover .tooltip {
 }
 
 .name-title {
-  font-family: 'Oswald';
+  font-family: "DM Serif Text";
   color: var(--clr-primary-text);
 }
 
@@ -234,6 +237,21 @@ nav a:hover .tooltip {
   width: 100%;
   height: auto;
   display: block;
+  filter: contrast(120%) brightness(130%);
+}
+
+.picture-wrapper::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    var(--clr-primary-text-alpha-2) 0%,
+    var(--clr-primary-alpha) 100%
+  );
 }
 
 .about-content {
@@ -267,7 +285,7 @@ nav a:hover .tooltip {
 
 .about-content p {
   line-height: 1.5;
-  font-family: 'Source Serif 4';
+  font-family: "Source Serif 4";
   font-size: 1.1rem;
 }
 
@@ -319,12 +337,12 @@ nav a:hover .tooltip {
   padding: 20px;
   padding-left: 40px;
   flex: 1 1 20%;
-  font-family: 'Oswald';
+  font-family: "DM Serif Text";
   height: auto;
 }
 
 li {
-  font-family: 'Source Serif 4';
+  font-family: "Source Serif 4";
   line-height: 1rem;
   align-items: center;
   padding: 12px 0;
@@ -349,7 +367,7 @@ li {
 }
 
 .experience-title + ul li {
-  font-family: 'Source Serif 4';
+  font-family: "Source Serif 4";
   line-height: 1rem;
   align-items: center;
   padding: 12px 0;
@@ -401,7 +419,7 @@ ul {
 .references-tile p {
   color: var(--clr-black);
   border-radius: 4px;
-  font-family: 'Oswald';
+  font-family: "DM Serif Text";
   font-size: 1rem;
 }
 

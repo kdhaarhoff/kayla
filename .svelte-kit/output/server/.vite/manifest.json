@@ -53,9 +53,9 @@
       "_ssr.js"
     ]
   },
-  "src/lib/assets/me.jpg": {
-    "file": "_app/immutable/assets/me.-BPWMKSw.jpg",
-    "src": "src/lib/assets/me.jpg"
+  "src/lib/assets/kayla.jpeg": {
+    "file": "_app/immutable/assets/kayla.uIDFrkvK.jpeg",
+    "src": "src/lib/assets/kayla.jpeg"
   },
   "src/routes/+layout.js": {
     "file": "entries/pages/_layout.js",
@@ -78,10 +78,10 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.CmD5L2hX.css"
+      "_app/immutable/assets/_page.BOFVVz_7.css"
     ],
     "assets": [
-      "_app/immutable/assets/me.-BPWMKSw.jpg"
+      "_app/immutable/assets/kayla.uIDFrkvK.jpeg"
     ]
   }
 }

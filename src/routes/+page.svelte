@@ -16,7 +16,7 @@
 
   import Accordion from './Accordion.svelte';
 
-  import profilePicture from "$lib/assets/me.jpg";
+  import profilePicture from "$lib/assets/kayla.jpeg";
 </script>
 
 <div class="content-wrapper">
@@ -31,6 +31,7 @@
   <div class="about-wrapper">
     <div class="picture-wrapper">
       <img src={profilePicture} alt="A picture of me">
+      <div class="gradient-edges"></div>
     </div>
     <div class="name-title">
       <h2>KAYLA HAARHOFF</h2>
@@ -48,7 +49,6 @@
 
   <div class="about-content">
     <h1 id="about"><span class="h1-icon"><GravityUiPerson /></span> About Me</h1>
-    <h2>Experienced Sales Representative with a Decade of Industry Expertise</h2>
     <p>
       I am a motivated young professional with a keen desire to gain valuable work experience. I possess a strong willingness to learn and am driven to achieve excellence. I thrive both independently and as part of a team, believing firmly in the power of motivation to enhance team performance. Known for my friendly demeanor, I enjoy engaging with others and fostering positive relationships. My reliability, trustworthiness, and organizational skills enable me to effectively tackle any challenges I encounter. I am confident in my ability to contribute meaningfully to any team.
     </p>
@@ -81,7 +81,7 @@
 </div>
 <h1 id="experience"><span class="h1-icon"><GravityUiChartAreaStacked /></span> Work Experience</h1>
   <Accordion>
-    <span slot="head">Stella's Beauty Bar</span>
+    <span slot="head">Skin Experts Aesthetics</span>
     <div slot="details">
       <div class="experience-title">
         <p>2019 – current</p>
@@ -103,7 +103,7 @@
   <h1 id="references"><span class="h1-icon"><GravityUiSmartphone /></span> References</h1>
   <div class="references-wrapper">
     <div class="references-tile">
-      <p><GravityUiMapPin /> <strong> Stella's Beauty Bar</strong></p>
+      <p><GravityUiMapPin /> <strong> Skin Experts Aesthetics</strong></p>
       <p><GravityUiPerson /> Stella Ndlovu</p>
       <p><GravityUiSmartphone /> 071 710 6157</p>
     </div>
