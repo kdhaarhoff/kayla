@@ -59,10 +59,12 @@
         <h3><GravityUiGraduationCap /></h3>
       </div>
     </div>
-  <h1 id="skills"><span class="h1-icon"><GravityUiChartPie /></span> Strength & Skills</h1>
+  <h1 id="skills"><span class="h1-icon"><GravityUiChartPie /></span> Strengths & Skills</h1>
   <div class="skills-wrapper">
     <div class="skill-tile">
       <ul>
+        <li>Social media advertising</li>
+        <li>Promotion & branding design</li>
         <li>Always willing to learn</li>
         <li>Environment adaptability</li>
         <li>Excellent communication</li>
@@ -73,9 +75,7 @@
         <li>Honesty and integrity</li>
         <li>Professional conduct</li>
         <li>Customer-centric</li>
-        <li>Welcoming and presentable demeanor</li>
-        <li>Exuviate product training</li>        
-        <li>Punctual</li>        
+        <li>Welcoming and Punctual</li>
       </ul>
     </div>
 </div>
